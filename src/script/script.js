@@ -160,16 +160,16 @@ let ImageSrc1;
 let imageId = 1;
 seconImagesModel.forEach((el, index) => {
   el.addEventListener("click", () => {
-    if (imageId === 1) {
+    if (index + 1 === 1) {
       ImageSrc1 = mainImage1;
     }
-    if (imageId === 2) {
+    if (index + 1 === 2) {
       ImageSrc1 = mainImage2;
     }
-    if (imageId === 3) {
+    if (index + 1 === 3) {
       ImageSrc1 = mainImage3;
     }
-    if (imageId === 4) {
+    if (index + 1 === 4) {
       ImageSrc1 = mainImage4;
     }
 
