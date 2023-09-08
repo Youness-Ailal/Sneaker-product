@@ -118,7 +118,6 @@ body {
     text-decoration: none;
     padding: 2rem;
     font-size: 1.6rem;
-    width: 11ch;
 
     transition: 0.2s;
     font-weight: 500;
@@ -143,7 +142,7 @@ body {
       background-color: var(--Orange);
       position: absolute;
       bottom: 0;
-      left: 2rem;
+      left: calc(0% - 2rem);
       translate: 0 4rem;
       transition: 0.2s;
       opacity: 1;

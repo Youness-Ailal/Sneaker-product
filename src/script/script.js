@@ -64,19 +64,19 @@ const moveBorder = function (distance) {
 
 //Handles Navigation
 navItem1.addEventListener("mouseover", e => {
-  moveBorder("2rem");
+  moveBorder("calc(2rem + 0%)");
 });
 navItem2.addEventListener("mouseover", e => {
-  moveBorder("12rem");
+  moveBorder("calc(25%");
 });
 navItem3.addEventListener("mouseover", e => {
-  moveBorder("20.5rem");
+  moveBorder("calc(43%");
 });
 navItem4.addEventListener("mouseover", e => {
-  moveBorder("30rem");
+  moveBorder("calc(62%");
 });
 navItem5.addEventListener("mouseover", e => {
-  moveBorder("39rem");
+  moveBorder("calc(82%)");
 });
 
 //Handlesr Cart
@@ -315,9 +315,22 @@ document.addEventListener("click", e => {
 //handels nex prev in mobile images
 
 let mobIndex = 1;
+let src;
 nextBtnMob.addEventListener("click", () => {
   mobIndex++;
-  const src = `mainImage${mobIndex}`;
+  if (mobIndex === 1) {
+    src = mainImage1;
+  }
+  if (mobIndex === 2) {
+    src = mainImage2;
+  }
+  if (mobIndex === 3) {
+    src = mainImage3;
+  }
+  if (mobIndex === 4) {
+    src = mainImage4;
+  }
+
   productMainImage.style.opacity = "0";
   setTimeout(() => {
     productMainImage.style.opacity = "1";
@@ -329,7 +342,7 @@ nextBtnMob.addEventListener("click", () => {
 });
 
 //prev btn
-let src;
+
 prevBtnMob.addEventListener("click", () => {
   mobIndex--;
   if (mobIndex <= 1) {

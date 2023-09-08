@@ -632,19 +632,19 @@ const moveBorder = function(distance) {
 };
 //Handles Navigation
 navItem1.addEventListener("mouseover", (e)=>{
-    moveBorder("2rem");
+    moveBorder("calc(2rem + 0%)");
 });
 navItem2.addEventListener("mouseover", (e)=>{
-    moveBorder("12rem");
+    moveBorder("calc(25%");
 });
 navItem3.addEventListener("mouseover", (e)=>{
-    moveBorder("20.5rem");
+    moveBorder("calc(43%");
 });
 navItem4.addEventListener("mouseover", (e)=>{
-    moveBorder("30rem");
+    moveBorder("calc(62%");
 });
 navItem5.addEventListener("mouseover", (e)=>{
-    moveBorder("39rem");
+    moveBorder("calc(82%)");
 });
 //Handlesr Cart
 navList.addEventListener("mouseleave", ()=>{
@@ -824,9 +824,13 @@ document.addEventListener("click", (e)=>{
 });
 //handels nex prev in mobile images
 let mobIndex = 1;
+let src;
 nextBtnMob.addEventListener("click", ()=>{
     mobIndex++;
-    const src = `mainImage${mobIndex}`;
+    if (mobIndex === 1) src = (0, _imageProduct1JpgDefault.default);
+    if (mobIndex === 2) src = (0, _imageProduct2JpgDefault.default);
+    if (mobIndex === 3) src = (0, _imageProduct3JpgDefault.default);
+    if (mobIndex === 4) src = (0, _imageProduct4JpgDefault.default);
     productMainImage.style.opacity = "0";
     setTimeout(()=>{
         productMainImage.style.opacity = "1";
@@ -835,7 +839,6 @@ nextBtnMob.addEventListener("click", ()=>{
     if (mobIndex === 4) mobIndex = 0;
 });
 //prev btn
-let src;
 prevBtnMob.addEventListener("click", ()=>{
     mobIndex--;
     if (mobIndex <= 1) mobIndex = 4;
