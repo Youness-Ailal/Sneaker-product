@@ -607,7 +607,7 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 1rem;
-  transition: 0.1s;
+  transition: 0.3s;
   user-select: none;
 }
 .images__main-image--container {

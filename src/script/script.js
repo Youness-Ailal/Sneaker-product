@@ -347,7 +347,7 @@ nextBtnMob.addEventListener("click", () => {
   setTimeout(() => {
     productMainImage.style.opacity = "1";
     productMainImage.setAttribute("src", src);
-  }, 100);
+  }, 300);
   if (mobIndex === 4) {
     mobIndex = 0;
   }
@@ -377,7 +377,7 @@ prevBtnMob.addEventListener("click", () => {
   setTimeout(() => {
     productMainImage.style.opacity = "1";
     productMainImage.setAttribute("src", src);
-  }, 100);
+  }, 300);
 });
 
 //send to cart view
