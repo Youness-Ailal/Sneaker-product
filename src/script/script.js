@@ -1,4 +1,8 @@
 //Imports
+import mainImage1 from "../images/image-product-1.jpg";
+import mainImage2 from "../images/image-product-2.jpg";
+import mainImage3 from "../images/image-product-3.jpg";
+import mainImage4 from "../images/image-product-4.jpg";
 
 /// App Variables
 const navBorder = document.querySelector(".header__item--border");
@@ -124,15 +128,28 @@ document.addEventListener("click", e => {
 });
 
 //Handels Front Images (Not modal)
+let src1;
 secondImages.forEach((el, index) => {
   el.addEventListener("click", e => {
     secondImages.forEach(el => el.classList.remove("active-thumbnail"));
     el.classList.add("active-thumbnail");
-    const ImageSrc = `images/image-product-${index + 1}.jpg`;
+    if (index + 1 === 1) {
+      src1 = mainImage1;
+    }
+    if (index + 1 === 2) {
+      src1 = mainImage2;
+    }
+    if (index + 1 === 3) {
+      src1 = mainImage3;
+    }
+    if (index + 1 === 4) {
+      src1 = mainImage4;
+    }
+
     productMainImage.style.opacity = "0";
 
     setTimeout(() => {
-      productMainImage.setAttribute("src", ImageSrc);
+      productMainImage.setAttribute("src", src1);
       productMainImage.style.opacity = "1";
     }, 150);
   });
@@ -143,7 +160,7 @@ secondImages.forEach((el, index) => {
 let imageId = 1;
 seconImagesModel.forEach((el, index) => {
   el.addEventListener("click", () => {
-    const ImageSrc = `images/image-product-${index + 1}.jpg`;
+    const ImageSrc = `mainImage${index + 1}`;
     modelImage.style.opacity = "0";
     seconImagesModel.forEach(e => e.classList.remove("active-thumbnail"));
     el.classList.add("active-thumbnail");
@@ -156,37 +173,63 @@ seconImagesModel.forEach((el, index) => {
 });
 
 //Next button
+let src2;
 nextBtn.addEventListener("click", () => {
   if (imageId !== 4) {
     imageId++;
   } else if (imageId === 4) {
     imageId = 1;
   }
-  const ImageSrc = `images/image-product-${imageId}.jpg`;
+  if (imageId === 1) {
+    src2 = mainImage1;
+  }
+  if (imageId === 2) {
+    src2 = mainImage2;
+  }
+  if (imageId === 3) {
+    src2 = mainImage3;
+  }
+  if (imageId === 4) {
+    src2 = mainImage4;
+  }
+
   modelImage.style.opacity = "0";
   seconImagesModel.forEach(e => e.classList.remove("active-thumbnail"));
   seconImagesModel[imageId - 1].classList.add("active-thumbnail");
 
   setTimeout(() => {
     modelImage.style.opacity = "1";
-    modelImage.setAttribute("src", ImageSrc);
+    modelImage.setAttribute("src", src2);
   }, 100);
 });
 //Prev Button
+let src3;
 prevBtn.addEventListener("click", () => {
   if (imageId !== 1) {
     imageId--;
   } else if (imageId === 1) {
     imageId = 4;
   }
-  const ImageSrc = `images/image-product-${imageId}.jpg`;
+  if (imageId === 1) {
+    src2 = mainImage1;
+  }
+  if (imageId === 2) {
+    src2 = mainImage2;
+  }
+  if (imageId === 3) {
+    src2 = mainImage3;
+  }
+  if (imageId === 4) {
+    src2 = mainImage4;
+  }
+
   modelImage.style.opacity = "0";
   seconImagesModel.forEach(e => e.classList.remove("active-thumbnail"));
   seconImagesModel[imageId - 1].classList.add("active-thumbnail");
 
   setTimeout(() => {
     modelImage.style.opacity = "1";
-    modelImage.setAttribute("src", ImageSrc);
+    modelImage.setAttribute("src", src2);
   }, 100);
 });
 
@@ -274,7 +317,7 @@ document.addEventListener("click", e => {
 let mobIndex = 1;
 nextBtnMob.addEventListener("click", () => {
   mobIndex++;
-  const src = `images/image-product-${mobIndex}.jpg`;
+  const src = `mainImage${mobIndex}`;
   productMainImage.style.opacity = "0";
   setTimeout(() => {
     productMainImage.style.opacity = "1";
@@ -286,12 +329,25 @@ nextBtnMob.addEventListener("click", () => {
 });
 
 //prev btn
+let src;
 prevBtnMob.addEventListener("click", () => {
   mobIndex--;
   if (mobIndex <= 1) {
     mobIndex = 4;
   }
-  const src = `images/image-product-${mobIndex}.jpg`;
+  if (mobIndex === 1) {
+    src = mainImage1;
+  }
+  if (mobIndex === 2) {
+    src = mainImage2;
+  }
+  if (mobIndex === 3) {
+    src = mainImage3;
+  }
+  if (mobIndex === 4) {
+    src = mainImage4;
+  }
+
   productMainImage.style.opacity = "0";
   setTimeout(() => {
     productMainImage.style.opacity = "1";
