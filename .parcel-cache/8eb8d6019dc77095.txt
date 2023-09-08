@@ -17,7 +17,7 @@
 80C:\Users\Youness\Desktop\ecommerce-product\node_modules\abortcontroller-polyfill133386042042431303 1
 73C:\Users\Youness\Desktop\ecommerce-product\node_modules\lmdb\util\when.js133386042065031189 0
 77C:\Users\Youness\Desktop\ecommerce-product\node_modules\msgpackr\package.json133386042048035127 0
-47C:\Users\Youness\Desktop\ecommerce-product\dist133386395914881425 1
+47C:\Users\Youness\Desktop\ecommerce-product\dist133386407861550069 1
 92C:\Users\Youness\Desktop\ecommerce-product\node_modules\css-tree\lib\syntax\node\Selector.js133386042069108835 0
 65C:\Users\Youness\Desktop\ecommerce-product\node_modules\@mischnic133386042012016059 1
 83C:\Users\Youness\Desktop\ecommerce-product\node_modules\source-map\lib\array-set.js133386042036698318 0
@@ -126,7 +126,7 @@
 84C:\Users\Youness\Desktop\ecommerce-product\node_modules\css-tree\cjs\utils\clone.cjs133386042043443207 0
 72C:\Users\Youness\Desktop\ecommerce-product\node_modules\.bin\js-yaml.cmd133386042230357718 0
 91C:\Users\Youness\Desktop\ecommerce-product\node_modules\htmlnano\lib\modules\mergeStyles.js133386042043060997 0
-63C:\Users\Youness\Desktop\ecommerce-product\src\script\script.js133386395914521621 0
+63C:\Users\Youness\Desktop\ecommerce-product\src\script\script.js133386407707541888 0
 129C:\Users\Youness\Desktop\ecommerce-product\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\removeEmptyContainers.js133386042053531963 0
 92C:\Users\Youness\Desktop\ecommerce-product\node_modules\csso\cjs\replace\property\border.cjs133386042042581215 0
 88C:\Users\Youness\Desktop\ecommerce-product\node_modules\update-browserslist-db\README.md133386042037877634 0
@@ -1564,7 +1564,7 @@
 143C:\Users\Youness\Desktop\ecommerce-product\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\lib\pseudo-selectors\subselects.d.ts133386042050793538 0
 88C:\Users\Youness\Desktop\ecommerce-product\node_modules\postcss-value-parser\lib\walk.js133386042037387916 0
 96C:\Users\Youness\Desktop\ecommerce-product\node_modules\json-parse-even-better-errors\LICENSE.md133386042034649499 0
-65C:\Users\Youness\Desktop\ecommerce-product\dist\index.23660007.js133386395914861433 0
+65C:\Users\Youness\Desktop\ecommerce-product\dist\index.23660007.js133386407861480127 0
 78C:\Users\Youness\Desktop\ecommerce-product\node_modules\picomatch\CHANGELOG.md133386042040519945 0
 114C:\Users\Youness\Desktop\ecommerce-product\node_modules\csso\node_modules\css-tree\lib\syntax\node\MediaFeature.js133386042068149388 0
 79C:\Users\Youness\Desktop\ecommerce-product\node_modules\@parcel\core\index.d.ts133386042068389252 0
@@ -5928,7 +5928,7 @@
 76C:\Users\Youness\Desktop\ecommerce-product\dist\image-product-1.5f963ded.jpg133386395122558945 0
 86C:\Users\Youness\Desktop\ecommerce-product\dist\image-product-2-thumbnail.273df9ad.jpg133386042797562093 0
 86C:\Users\Youness\Desktop\ecommerce-product\dist\image-product-2-thumbnail.c1078cca.jpg133386395122548962 0
-69C:\Users\Youness\Desktop\ecommerce-product\dist\index.23660007.js.map133386395914881425 0
+69C:\Users\Youness\Desktop\ecommerce-product\dist\index.23660007.js.map133386407861540073 0
 70C:\Users\Youness\Desktop\ecommerce-product\dist\index.599ca509.css.map133386395122588928 0
 65C:\Users\Youness\Desktop\ecommerce-product\dist\index.7d3bcf8a.js133386042799361047 0
 66C:\Users\Youness\Desktop\ecommerce-product\dist\index.e180ed58.css133386042799361047 0

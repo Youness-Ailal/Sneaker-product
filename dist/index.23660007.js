@@ -693,17 +693,21 @@ secondImages.forEach((el, index)=>{
     });
 });
 //Handels model images
+let ImageSrc1;
 let imageId = 1;
 seconImagesModel.forEach((el, index)=>{
     el.addEventListener("click", ()=>{
-        const ImageSrc = `mainImage${index + 1}`;
+        if (imageId === 1) ImageSrc1 = (0, _imageProduct1JpgDefault.default);
+        if (imageId === 2) ImageSrc1 = (0, _imageProduct2JpgDefault.default);
+        if (imageId === 3) ImageSrc1 = (0, _imageProduct3JpgDefault.default);
+        if (imageId === 4) ImageSrc1 = (0, _imageProduct4JpgDefault.default);
         modelImage.style.opacity = "0";
         seconImagesModel.forEach((e)=>e.classList.remove("active-thumbnail"));
         el.classList.add("active-thumbnail");
         imageId = index + 1;
         setTimeout(()=>{
             modelImage.style.opacity = "1";
-            modelImage.setAttribute("src", ImageSrc);
+            modelImage.setAttribute("src", ImageSrc1);
         }, 100);
     });
 });
