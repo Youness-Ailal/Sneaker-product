@@ -56,6 +56,7 @@ const navigation = document.querySelector(".header__navigation");
 //Main images mobile
 const nextBtnMob = document.querySelector(".product-img__icon--next");
 const prevBtnMob = document.querySelector(".product-img__icon--prev");
+const imgSpinner = document.querySelector(".product__spinner");
 //Functions
 const moveBorder = function (distance) {
   navBorder.classList.remove("invisible");
@@ -347,7 +348,7 @@ nextBtnMob.addEventListener("click", () => {
   setTimeout(() => {
     productMainImage.style.opacity = "1";
     productMainImage.setAttribute("src", src);
-  }, 300);
+  }, 150);
   if (mobIndex === 4) {
     mobIndex = 0;
   }
@@ -377,7 +378,7 @@ prevBtnMob.addEventListener("click", () => {
   setTimeout(() => {
     productMainImage.style.opacity = "1";
     productMainImage.setAttribute("src", src);
-  }, 300);
+  }, 150);
 });
 
 //send to cart view
