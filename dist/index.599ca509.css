@@ -499,6 +499,12 @@ body {
   font-weight: 700;
 }
 
+@media (width < 487px) {
+  .product__main-price {
+    font-size: 3.5rem;
+  }
+}
+
 .product__discount {
   color: var(--Orange);
   background-color: var(--Pale-orange);
@@ -551,7 +557,8 @@ body {
 
 @media (width < 450px) {
   .product__quantity {
-    width: 50%;
+    width: 90%;
+    padding: 1rem 0;
   }
 }
 
@@ -569,6 +576,12 @@ body {
   scale: .8;
 }
 
+@media (width < 450px) {
+  .product__quantity--plus {
+    padding: 0 2rem;
+  }
+}
+
 .product__quantity--minest {
   color: var(--Orange);
   cursor: pointer;
@@ -581,6 +594,12 @@ body {
 
 .product__quantity--minest:active {
   scale: .8;
+}
+
+@media (width < 450px) {
+  .product__quantity--minest {
+    padding: 0 2rem;
+  }
 }
 
 .product__quantity--number {

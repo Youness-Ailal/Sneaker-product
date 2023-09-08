@@ -379,3 +379,10 @@ prevBtnMob.addEventListener("click", () => {
     productMainImage.setAttribute("src", src);
   }, 100);
 });
+
+//send to cart view
+addToCartBtn.addEventListener("click", () => {
+  if (window.visualViewport.pageTop === 0) return;
+
+  window.scrollTo({ left: 0, top: 0, behavior: "smooth", duration: 8000 });
+});

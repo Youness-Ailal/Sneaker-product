@@ -697,10 +697,10 @@ let ImageSrc1;
 let imageId = 1;
 seconImagesModel.forEach((el, index)=>{
     el.addEventListener("click", ()=>{
-        if (imageId === 1) ImageSrc1 = (0, _imageProduct1JpgDefault.default);
-        if (imageId === 2) ImageSrc1 = (0, _imageProduct2JpgDefault.default);
-        if (imageId === 3) ImageSrc1 = (0, _imageProduct3JpgDefault.default);
-        if (imageId === 4) ImageSrc1 = (0, _imageProduct4JpgDefault.default);
+        if (index + 1 === 1) ImageSrc1 = (0, _imageProduct1JpgDefault.default);
+        if (index + 1 === 2) ImageSrc1 = (0, _imageProduct2JpgDefault.default);
+        if (index + 1 === 3) ImageSrc1 = (0, _imageProduct3JpgDefault.default);
+        if (index + 1 === 4) ImageSrc1 = (0, _imageProduct4JpgDefault.default);
         modelImage.style.opacity = "0";
         seconImagesModel.forEach((e)=>e.classList.remove("active-thumbnail"));
         el.classList.add("active-thumbnail");
@@ -855,6 +855,16 @@ prevBtnMob.addEventListener("click", ()=>{
         productMainImage.style.opacity = "1";
         productMainImage.setAttribute("src", src);
     }, 100);
+});
+//send to cart view
+addToCartBtn.addEventListener("click", ()=>{
+    if (window.visualViewport.pageTop === 0) return;
+    window.scrollTo({
+        left: 0,
+        top: 0,
+        behavior: "smooth",
+        duration: 8000
+    });
 });
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../images/image-product-1.jpg":"im9Ir","../images/image-product-2.jpg":"KEseZ","../images/image-product-3.jpg":"jw4xS","../images/image-product-4.jpg":"g53pv"}],"gkKU3":[function(require,module,exports) {
