@@ -899,3 +899,18 @@ body {
     transform: rotate(25deg);
   }
 }
+
+.copy {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--Orange);
+  display: grid;
+  place-content: center;
+  font-size: 1.4rem;
+  color: var(--Light-grayish-blue);
+  a {
+    color: currentColor;
+  }
+}
